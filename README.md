@@ -79,7 +79,6 @@ endmodule
 ![Screenshot 2025-05-20 114246](https://github.com/user-attachments/assets/1e413923-2dff-4788-9c7f-732fd2f1928e)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![image](https://github.com/user-attachments/assets/e9e9044a-4b74-4029-bf18-c8fc31516d64)
 
 **RESULTS**
-![Screenshot 2025-05-20 114255](https://github.com/user-attachments/assets/3eaebf51-9e94-4d4f-b6bf-13591346fcd7)
+The observation of the stimulation results and confirm the succesfull executuion of the program 
