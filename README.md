@@ -34,7 +34,6 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-
 1.Type the program in Quartus software.
 
 2.Compile and run the program.
@@ -43,42 +42,47 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 4.Create nodes for inputs and outputs to generate the timing diagram.
 
-5.For different input combinations generate the timing diagram.
-
+5.For different input combinations generate the timing diagram.
 
 **PROGRAM**
 
-Program for flipflops and verify its truth table in quartus using Verilog programming.
-Developed by:lidison sham M 
+/*Program for flipflops and verify its truth table in quartus using Verilog programming.* <br>
+Developed by:Lidison sham M  
 RegisterNumber:212224040171
 
-verilog
-module EXP_6(q, q_bar, s,r, clk, reset);//SR Flip Flop Behavioral Level using ‘case’ 
+```verilog
+module exp6(q, q_bar, s,r, clk, reset);
   input s,r,clk, reset;
   output reg q;
   output q_bar;
  
-  always@(posedge clk) begin // for synchronous reset
-    if(!reset)       
-			q <= 0;
+  always@(posedge clk) begin 
+    if(!reset)       q <= 0;
     else 
   begin
       case({s,r})       
-	     2'b00: q <= q;    // No change
-        2'b01:q<=1'b0;   // Write logic for reset
-        2'b10:q<=1'b1;   // Write logic for set
-        2'b11:q<=1'bx;   // Write logic for Invalid state
+	     2'b00: q <= q; 
+        2'b01: q <= 1'b0; 
+        2'b10: q <= 1'b1; 
+        2'b11: q <= 1'bx; 
       endcase
     end
   end
   assign q_bar = ~q;
 endmodule
-*
+```
 
 **RTL LOGIC FOR FLIPFLOPS**
-![Screenshot 2025-05-20 114246](https://github.com/user-attachments/assets/1e413923-2dff-4788-9c7f-732fd2f1928e)
+
+![image](https://github.com/user-attachments/assets/258c871e-d3e6-4128-a8c6-9ab7e12f11bb)
+
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+![WhatsApp Image 2025-05-18 at 21 43 17_cb8cf9bd](https://github.com/user-attachments/assets/ba1866a8-d6b2-467d-a2e1-1ba9f4c311e6)
+
+
+
 **RESULTS**
-The observation of the stimulation results and confirm the succesfull executuion of the program 
+
+The observation of the simulation results and confirm the successful execution of the program.
